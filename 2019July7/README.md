@@ -1,5 +1,5 @@
 
-# Human Activity Recognition on the Wireless Sensor Data Mining (WISDM) dataset using LSTM Recurrent Neural Networks  
+# Human Activity Recognition on the Wireless Sensor Data Mining (WISDM) dataset using DL
 This folder contains code used to recognize human activity based on the Wireless Sensor Data Mining (WISDM) dataset using CNN, LSTM and CNN-LSTM.
 
 ## Dataset
