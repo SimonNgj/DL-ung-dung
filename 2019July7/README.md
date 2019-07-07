@@ -59,7 +59,7 @@ The data needs to be separated into features and labels and then further into tr
 ## Results
 The classifier achieves the accuracy of _96.95%_ by CNN, _92.81%_ by LSTM and _89.85%_ by CNN-LSTM though it might presumably be slightly improved by decreasing the _step size_ of _sliding window_.
 The following graphs show the train/test error/accuracy for each epoch and the final confusion matrix (normalised so that each row sums to one).
-
+From the esperimental results, we can see that the highest accuracy obatained by 1D-CNN the model
 
 ### Use
 1. Run the script with  `python simon.py`
