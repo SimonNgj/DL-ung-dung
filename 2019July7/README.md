@@ -32,7 +32,7 @@ The data needs to be separated into features and labels and then further into tr
 - Learning rate = 0.0025
 - BATCH_SIZE = 32
 
-## CNN
+### CNN
 - ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
 - x = conv1D(32,7, RELU, BatchNormalization)(ip)
 - x = conv1D(64,5, RELU)(x)
@@ -40,14 +40,14 @@ The data needs to be separated into features and labels and then further into tr
 - out = Dense(N_CLASSES, softmax)(x)
 - model = Model(ip, out)
 
-## LSTM
+### LSTM
 - ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
 - x = LSTM(64)(ip)
 - x = LSTM(64)(x)
 - out = Dense(N_CLASSES, softmax)(x)
 - model = Model(ip, out)
 
-## CNN-LSTM
+### CNN-LSTM
 - ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
 - x = conv1D(16,7, RELU, BatchNormalization)(x)
 - x = conv1D(32,5, RELU)(x)
