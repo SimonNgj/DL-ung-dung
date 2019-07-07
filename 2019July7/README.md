@@ -33,9 +33,9 @@ out = Dense(N_CLASSES, softmax)(x)
 model = Model(ip, out)
 
 ## LSTM
-ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
-x = LSTM(64)(ip)
-x = LSTM(64)(x)
+- ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
+- x = LSTM(64)(ip)
+- x = LSTM(64)(x)
 out = Dense(N_CLASSES, softmax)(x)
 model = Model(ip, out)
 
