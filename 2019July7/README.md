@@ -24,29 +24,36 @@ The data needs to be separated into features and labels and then further into tr
 - Confusion matrix graph
 - Error/Accuracy rate graph
 
+## Parameters
+- SEGMENT_TIME_SIZE = 200: Window lenght
+- N_FEATURES = 3: Number of features (3 sensors)
+- N_CLASSES = 6: number of activities
+- Learning rate = 0.0025
+- BATCH_SIZE = 32
+
 ## CNN
-ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
-x = conv1D(32,7, RELU, BatchNormalization)(ip)
-x = conv1D(64,5, RELU)(x)
-x = GlobalAveragePooling1D()(x)
-out = Dense(N_CLASSES, softmax)(x)
-model = Model(ip, out)
+- ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
+- x = conv1D(32,7, RELU, BatchNormalization)(ip)
+- x = conv1D(64,5, RELU)(x)
+- x = GlobalAveragePooling1D()(x)
+- out = Dense(N_CLASSES, softmax)(x)
+- model = Model(ip, out)
 
 ## LSTM
 - ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
 - x = LSTM(64)(ip)
 - x = LSTM(64)(x)
-out = Dense(N_CLASSES, softmax)(x)
-model = Model(ip, out)
+- out = Dense(N_CLASSES, softmax)(x)
+- model = Model(ip, out)
 
 ## CNN-LSTM
-ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
-x = conv1D(16,7, RELU, BatchNormalization)(x)
-x = conv1D(32,5, RELU)(x)
-x = LSTM(32)(x)
-x = LSTM(32)(x)
-out = Dense(N_CLASSES, softmax)(x)
-model = Model(ip, out)
+- ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
+- x = conv1D(16,7, RELU, BatchNormalization)(x)
+- x = conv1D(32,5, RELU)(x)
+- x = LSTM(32)(x)
+- x = LSTM(32)(x)
+- out = Dense(N_CLASSES, softmax)(x)
+- model = Model(ip, out)
 
 ## Results
 The classifier achieves the accuracy of _96.95%_ by CNN, _92.81%_ by LSTM and _89.85%_ by CNN-LSTM though it might presumably be slightly improved by decreasing the _step size_ of _sliding window_.
