@@ -1,6 +1,6 @@
 
 # Human Activity Recognition on the Wireless Sensor Data Mining (WISDM) dataset using LSTM Recurrent Neural Networks  
-This repository cotains code used to recognize human activity based on the Wireless Sensor Data Mining (WISDM) dataset using LSTM (Long short-term memory) and is heavily based on the article by [Venelin Valkov](https://medium.com/@curiousily/human-activity-recognition-using-lstms-on-android-tensorflow-for-hackers-part-vi-492da5adef64).
+This folder contains code used to recognize human activity based on the Wireless Sensor Data Mining (WISDM) dataset using CNN, LSTM and CNN-LSTM.
 
 ## Dataset
 The data used for classification is provided by the Wireless Sensor Data Mining (WISDM) Lab and can be downloaded  [here](http://www.cis.fordham.edu/wisdm/dataset.php).
@@ -26,24 +26,16 @@ The data needs to be separated into features and labels and then further into tr
 - Confusion matrix graph
 - Error/Accuracy rate graph
 
-## LSTMs
-Long short-term memory (LSTM) Recurrent Neural Networks (RNNs) are used to model temporal data (i.e. speech recognition, NLP, human activity recognition), where there is a need to keep some state information. More info on LSTMs can be found [here](https://colah.github.io/posts/2015-08-Understanding-LSTMs/).
+## CNN
+
+## LSTM
+
+## CNN-LSTM
 
 ## Results
 The classifier achieves the accuracy of _94%_, though it might presumably be slightly improved by decreasing the _step size_ of _sliding window_.
 The following graphs show the train/test error/accuracy for each epoch and the final confusion matrix (normalised so that each row sums to one).
-![Train/test set accuracy/error ](images/error_accuracy_epochs.png) 
-![Confusion matrix ](images/confusion_matrix.png)
-
-
-### Dependencies
-- matplotlib 1.5.3
-- seaborn 0.8.1
-- numpy 1.14
-- pandas 0.20.3
-- scikit-learn 0.19.1
-- tensorflow 1.5.0
 
 
 ### Use
-1. Run the script with  `python3 HAR_Recognition.py`
+1. Run the script with  `python simon.py`
