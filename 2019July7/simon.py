@@ -6,6 +6,7 @@ Created on Sun Jul  7 20:29:28 2019
 """
 
 import numpy as np
+import time
 import pandas as pd
 import tensorflow as tf
 import seaborn as sns
@@ -27,6 +28,18 @@ import keras.backend as K
 from keras.callbacks import Callback
 from keras.callbacks import EarlyStopping
 
+##################################################
+### To show elapse time
+##################################################
+class TimeHistory(Callback):
+    def on_train_begin(self, logs={}):
+        self.times = []
+
+    def on_epoch_begin(self, epoch, logs={}):
+        self.epoch_time_start = time.time()
+
+    def on_epoch_end(self, epoch, logs={}):
+        self.times.append(time.time() - self.epoch_time_start)
 ##################################################
 ### GLOBAL VARIABLES
 ##################################################
@@ -169,7 +182,8 @@ if __name__ == '__main__':
     weight_fn = "./weights_simon.h5"
     model_checkpoint = ModelCheckpoint(weight_fn, verbose=1, mode='max', monitor='val_acc', save_best_only=True, save_weights_only=True)
     stop = EarlyStopping(monitor='val_loss', patience=15)
-    callback_list = [model_checkpoint, stop]
+    time_callback = TimeHistory()
+    callback_list = [model_checkpoint, time_callback, stop]
     optm = Adam(lr=LEARNING_RATE)
 
     model.compile(optimizer=optm, loss='categorical_crossentropy', metrics=['accuracy'])
@@ -214,3 +228,5 @@ if __name__ == '__main__':
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
     plt.show()
+    
+    print(time_callback.times)
