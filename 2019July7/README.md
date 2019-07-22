@@ -3,7 +3,7 @@
 This folder contains code used to recognize human activity based on the Wireless Sensor Data Mining (WISDM) dataset using 
 - FCN 
 - LSTM  
-- BiLSTM
+- Bidirectional LSTM
 - CNN-LSTM
 - Resnet
 
