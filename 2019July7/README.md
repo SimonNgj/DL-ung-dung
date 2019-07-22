@@ -6,6 +6,7 @@ This folder contains code used to recognize human activity based on the Wireless
 - BiLSTM
 - CNN-LSTM
 - Resnet
+
 This post highly relies on this repo: https://github.com/bartkowiaktomasz/har-wisdm-lstm-rnns
 
 ## Dataset
