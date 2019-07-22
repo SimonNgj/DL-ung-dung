@@ -75,4 +75,4 @@ From the esperimental results, we can see that the highest accuracy obatained by
 1. Run the script with  `python simon.py`
 
 ### References
-A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, 2018, pp. 915-922
+1. A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, 2018, pp. 915-922
