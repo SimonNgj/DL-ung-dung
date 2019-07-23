@@ -2,9 +2,10 @@
 # Human Activity Recognition on the Wireless Sensor Data Mining (WISDM) dataset using DL
 This folder contains code used to recognize human activity based on the Wireless Sensor Data Mining (WISDM) dataset using 
 - FCN 
+- MC-FCN
 - LSTM  
 - Bidirectional LSTM
-- CNN-LSTM
+- FCN-LSTM
 - Resnet
 
 This post highly relies on this repo: https://github.com/bartkowiaktomasz/har-wisdm-lstm-rnns
