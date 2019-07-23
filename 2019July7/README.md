@@ -52,5 +52,5 @@ The following graphs show the train/test error/accuracy for each epoch and the f
 1. Run the script with  `python simon.py`
 
 ### References
-1. A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, 2018, pp. 915-922
-2. JR. Kwapisz et al, Activity Recognition using Cell Phone Accelerometers, ACM SIGKDD, Vol. 12 Issue 2, pp. 74-82 
+1. A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, pp. 915-922, 2018.
+2. JR. Kwapisz et al, Activity Recognition using Cell Phone Accelerometers, ACM SIGKDD, Vol. 12 Issue 2, pp. 74-82, 2011
