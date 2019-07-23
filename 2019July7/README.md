@@ -42,7 +42,7 @@ The data needs to be separated into features and labels and then further into tr
 - Learning rate = 0.0025
 - BATCH_SIZE = 32
 
-### CNN
+### FCN
 - ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
 - x = conv1D(32,7, RELU, BatchNormalization)(ip)
 - x = conv1D(64,5, RELU)(x)
@@ -57,7 +57,7 @@ The data needs to be separated into features and labels and then further into tr
 - out = Dense(N_CLASSES, softmax)(x)
 - model = Model(ip, out)
 
-### CNN-LSTM
+### FCN-LSTM
 - ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
 - x = conv1D(16,7, RELU, BatchNormalization)(x)
 - x = conv1D(32,5, RELU)(x)
@@ -67,9 +67,12 @@ The data needs to be separated into features and labels and then further into tr
 - model = Model(ip, out)
 
 ## Results
-The classifier achieves the accuracy of _96.95%_ by CNN, _92.81%_ by LSTM and _89.85%_ by CNN-LSTM though it might presumably be slightly improved by decreasing the _step size_ of _sliding window_.
+The classifier achieves the accuracy of _96.95%_ by FCN, _92.81%_ by LSTM and _89.85%_ by CNN-LSTM though it might presumably be slightly improved by decreasing the _step size_ of _sliding window_.
 The following graphs show the train/test error/accuracy for each epoch and the final confusion matrix (normalised so that each row sums to one).
-From the esperimental results, we can see that the highest accuracy obatained by 1D-CNN the model
+
+|    FCN   |   LSTM   | FCN-LSTM||
+| ---------| -------- |---------|---------|
+| Content  | Content  |         ||
 
 ### Use
 1. Run the script with  `python simon.py`
@@ -77,7 +80,3 @@ From the esperimental results, we can see that the highest accuracy obatained by
 ### References
 1. A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, 2018, pp. 915-922
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
