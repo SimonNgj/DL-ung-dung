@@ -19,7 +19,6 @@ Original research done on this dataset can be found [here](http://www.cis.fordha
 
 
 ##  Data preprocessing
-
 In order to feed the network with such temporal dependencies a _sliding time window_ is used to extract separate data segments. The _window width_ and the _step size_ can be both adjusted and optimised for better accuracy. Each time step is associated with an activity label, so for each _segment_ the most frequently appearing label is chosen. Here, the _time segment_ or _window width_ is chosen to be _200_ and _time step_ is chosen to be _100_.
 
  |60% for training | 20% for validating | 20% for testing|
@@ -36,7 +35,7 @@ The data needs to be separated into features and labels and then further into tr
 - Error/Accuracy rate graph
 
 ## Parameters
-- SEGMENT_TIME_SIZE = 200: Window lenght
+- SEGMENT_TIME_SIZE = 200: Window length
 - N_FEATURES = 3: Number of features (3 sensors)
 - N_CLASSES = 6: number of activities
 - Learning rate = 0.0025
