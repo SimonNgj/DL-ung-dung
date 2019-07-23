@@ -15,7 +15,6 @@ It consists of _1,098,207_ examples of various physical activities (sampled at _
 
 Original research done on this dataset can be found [here](http://www.cis.fordham.edu/wisdm/public_files/sensorKDD-2010.pdf).
 
-
 ##  Data preprocessing
 In order to feed the network with such temporal dependencies a _sliding time window_ is used to extract separate data segments. The _window width_ and the _step size_ can be both adjusted and optimised for better accuracy. Each time step is associated with an activity label, so for each _segment_ the most frequently appearing label is chosen. Here, the _time segment_ or _window width_ is chosen to be _200_ and _time step_ is chosen to be _100_.
 
@@ -32,7 +31,7 @@ The data needs to be separated into features and labels and then further into tr
 - Confusion matrix graph
 - Error/Accuracy rate graph
 
-## Parameters
+### Parameters
 - SEGMENT_TIME_SIZE = 200: Window length
 - N_FEATURES = 3: Number of features (3 sensors)
 - N_CLASSES = 6: number of activities
