@@ -47,9 +47,9 @@ The data needs to be separated into features and labels and then further into tr
 
 The following graphs show the train/test error/accuracy for each epoch and the final confusion matrix (normalised so that each row sums to one).
 
-|    FCN  |  LSTM  | FCN-LSTM| MC-FCN  | Bi-LSTM | Resnet  |
-|---------|--------|---------|---------|---------|---------|
-| 96.95%  | 92.81% | 89.85%  | 94.95%  | 93.13%  |  98.82% |
+|Ref[1]  |    FCN  |  LSTM  | FCN-LSTM| MC-FCN  | Bi-LSTM | Resnet  |
+|--------|---------|--------|---------|---------|---------|---------|
+| 97.63% | 96.95%  | 92.81% | 89.85%  | 94.95%  | 93.13%  |  98.82% |
 
 ### Use
 1. Run the script with  `python simon.py`
