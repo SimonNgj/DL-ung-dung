@@ -44,13 +44,13 @@ The data needs to be separated into features and labels and then further into tr
 ## Results
 The following graphs show the train/test error/accuracy for each epoch and the final confusion matrix (normalised so that each row sums to one).
 
-|Ref[1]  |   LSTM  |Bi-LSTM | FCN     | MC-FCN  |FCN-LSTM | Resnet  |
-|--------|---------|--------|---------|---------|---------|---------|
-| 97.63% | 92.81%  | 93.13% | 96.95%  | 94.95%  | 89.85%  |  98.82% |
+| Ref[1] | Ref[2] |   LSTM  |Bi-LSTM | FCN     | MC-FCN  |FCN-LSTM | Resnet  |
+|--------|--------|---------|--------|---------|---------|---------|---------|
+| 97.63% |  91.70%| 92.81%| 93.13% | 96.95%  | 94.95%  | 89.85%  |  98.82% |
 
 ### Use
 1. Run the script with  `python simon.py`
 
 ### References
 1. A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, 2018, pp. 915-922
-
+2. JR. Kwapisz et al, Activity Recognition using Cell Phone Accelerometers, ACM SIGKDD, Vol. 12 Issue 2, pp. 74-82 
