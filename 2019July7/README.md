@@ -76,3 +76,8 @@ From the esperimental results, we can see that the highest accuracy obatained by
 
 ### References
 1. A. Ignatov, Real-time human activity recognition from accelerometer data using Convolutional Neural Networks, Applied Soft Computing, 2018, pp. 915-922
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
