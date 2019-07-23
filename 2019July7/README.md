@@ -42,30 +42,6 @@ The data needs to be separated into features and labels and then further into tr
 - Learning rate = 0.0025
 - BATCH_SIZE = 32
 
-### FCN
-- ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
-- x = conv1D(32,7, RELU, BatchNormalization)(ip)
-- x = conv1D(64,5, RELU)(x)
-- x = GlobalAveragePooling1D()(x)
-- out = Dense(N_CLASSES, softmax)(x)
-- model = Model(ip, out)
-
-### LSTM
-- ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
-- x = LSTM(64)(ip)
-- x = LSTM(64)(x)
-- out = Dense(N_CLASSES, softmax)(x)
-- model = Model(ip, out)
-
-### FCN-LSTM
-- ip = Input(SEGMENT_TIME_SIZE, N_FEATURES)
-- x = conv1D(16,7, RELU, BatchNormalization)(x)
-- x = conv1D(32,5, RELU)(x)
-- x = LSTM(32)(x)
-- x = LSTM(32)(x)
-- out = Dense(N_CLASSES, softmax)(x)
-- model = Model(ip, out)
-
 ## Results
 
 The following graphs show the train/test error/accuracy for each epoch and the final confusion matrix (normalised so that each row sums to one).
