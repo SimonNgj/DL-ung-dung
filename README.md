@@ -4,5 +4,3 @@ This repo contains implementation of some DL models for human acitivities classi
 
 <img src="./har.png"/>
 Images taken from: Jindong Wang et al, Deep learning for sensor-based activity recognition: A Survey, Pattern Recognition Letters (2018), https://doi.org/10.1016/j.patrec.2018.02.010
-
-to be continued ...
