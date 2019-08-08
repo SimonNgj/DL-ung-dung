@@ -8,7 +8,7 @@ The dataset contains 6 types of human actions:
 - hand waving,
 - jogging, 
 - running, 
-- walking, 
+- walking
 
 performed several times by 25 subjects in four different scenarios: outdoors s1, outdoors with scale variation s2, outdoors with different clothes s3 and indoors s4 as illustrated below.
 
