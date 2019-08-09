@@ -15,3 +15,7 @@ performed several times by 25 subjects in four different scenarios: outdoors s1,
 <img src="./actions.gif">
 
 This repo implements a 3D convolutional net for video human activtity classification
+
+to run the code:
+Download dataset =>
+python ./main2.py
