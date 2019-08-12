@@ -1,5 +1,8 @@
 
 # Human Activity Recognition using DL
+
+Sự phát triển vượt bậc trong công nghệ gần đây đã góp phần thúc đẩy những nghiên cứu trong lĩnh vực nhận dạng hành động con người (human activity recognition - HAR). HAR từ lâu đã được ứng dụng trong nhiều lĩnh vực như tương tác người-máy, quân sự, an ninh và đặc biệt trong các dịch vụ y tế, chăm sóc sức khỏe. Ở những nước tiên tiến, HAR đã được sử dụng để theo dõi hoạt động của người già ở những trung tâm hưu trí hay những cơ sở y tế phục hồi chức năng, góp phần phát hiện sớm những bất thường như đột quỵ, suy giảm chức năng vận động.
+
 This folder contains code used to recognize human activity based on the Wireless Sensor Data Mining (WISDM) dataset using 
 - FCN      | MC-FCN
 - LSTM     | Bidirectional LSTM
